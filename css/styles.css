@@ -7,9 +7,9 @@
   --thirdly-text-color: #fff;
   --team-section-background-color: #f4f4fd;
   --footer-text-color: #f4f4fd;
-  --main-text-color: #2e2f42;
+  --secondary-text-color: #2e2f42;
   --hero-section-background-color: #2e2f42;
-  --secondary-text-color: #434455;
+  --main-text-color: #434455;
   --header-list-item-hover-and-focus: #404bbf;
   --service-button-background-color: #4d5ae5;
   --service-button-hover-and-focus-background-color: #9747ff;
@@ -52,7 +52,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--main-text-color);
+  color: var(--secondary-text-color);
 }
 
 .nav-list {
@@ -62,23 +62,24 @@ body {
   letter-spacing: 0.02em;
 }
 .nav-list-item {
-  color: inherit;
+  color: var(--secondary-text-color);
 }
 
 .nav-list-item:hover,
 .nav-list-item:focus {
   color: var(--header-list-item-hover-and-focus);
 }
-
+.contact {
+  font-style: normal;
+}
 .contact-list {
   font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
 .contact-list-item {
-  color: var(--secondary-text-color);
+  color: inherit;
 }
 
 .contact-list-item:hover,
@@ -112,6 +113,7 @@ body {
   letter-spacing: 0.04em;
   color: var(--thirdly-text-color);
   background-color: #4d5ae5;
+  cursor: pointer;
 }
 
 .service-button:hover,
@@ -126,13 +128,13 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 .info-list-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
 
 .secondary-title {
@@ -141,6 +143,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  color: var(--secondary-text-color);
 }
 
 .team-section {
@@ -152,13 +155,13 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 .team-job {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
 }
 
 .btn {
@@ -185,13 +188,14 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 .list-of-photos-relationship {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--main-text-color);
 }
 /* =========== /MAIN =========== */
 
@@ -206,7 +210,7 @@ body {
   color: var(--footer-text-color);
 }
 
-.logotype-2-footer {
+.logotype-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
